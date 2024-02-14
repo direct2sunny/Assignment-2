@@ -6,5 +6,8 @@ The Position class is a fundamental component in the "Gem Hunters" game, represe
 **Players**
 The player represents a player in a game with basic functionality for movement and gem collection. It contains properties to track the player's name, position on a 2D grid, and the number of collected gems. The Position property is of a custom type, presumably a class or struct, that contains X and Y coordinates indicating the player's location on the grid.
 
+**Cell**
+The Cell class in the game serves as a fundamental building block for the game board's grid. Each instance of Cell represents a single square on the grid, which can be occupied by different objects in the game.
+
 **Board**
 The board is the backbone for a grid-based game environment in C#. It models a 6x6 game board containing obstacles, gems, and potentially a player. The class is structured to initialize the game board, populate it with obstacles and gems, and display its current state. 
