@@ -12,6 +12,7 @@ public class Position
         Y = y;
     }
 }
+
 public class Player
 {
     public string Name { get; set; }
@@ -36,6 +37,7 @@ public class Player
         }
     }
 }
+
 public class Cell
 {
     public string Occupant { get; set; }
@@ -45,7 +47,6 @@ public class Cell
         Occupant = occupant;
     }
 }
-using System;
 
 public class Board
 {
