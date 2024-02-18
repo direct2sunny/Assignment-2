@@ -59,15 +59,19 @@ The loop continues until the game is over, which is determined by the IsGameOver
 Alternates the current active player between Player1 and Player2. This method is called after each turn to ensure that players take turns in a fair sequence.
 
 **Is Game Over:**
-Checks if the game has reached its end condition. In "Gem Hunters," the game ends after 30 moves (15 for each player), so this method returns true when TotalTurns reaches 30.
+Check if the game has reached its end condition. In "Gem Hunters," the game ends after 30 moves (15 for each player), so this method returns true when TotalTurns reaches 30.
 
 **Announce Winner:**
 Once the game is over, this method compares the GemCount of both players to determine the winner. The winner is the player who has collected the most gems. The game ends in a tie if both players have the same number of gems. The result is then displayed to the console.
 
-**Gameplay Flow:**
-The game initializes and enters the main loop.
-With each turn, the current player is prompted to make a move.
+**Gameplay Flow:** 
+The game initializes and enters the main loop; the current player is prompted to move with each turn.
+
 The board is updated based on the player's action, including moving the player's position and collecting gems.
+
 The game checks for the end condition after each turn. If the condition is met, the loop exits.
+
 The winner is announced based on the number of gems each player collects.
+
+The game ended up with a winner or tie.
 
