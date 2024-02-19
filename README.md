@@ -65,9 +65,7 @@ Check if the game has reached its end condition. In "Gem Hunters," the game ends
 Once the game is over, this method compares the GemCount of both players to determine the winner. The winner is the player who has collected the most gems. The game ends in a tie if both players have the same number of gems. The result is then displayed to the console.
 
 **Gameplay Flow:** 
-The game initializes and enters the main loop;
-
-The current player is prompted to move with each turn.
+The game initializes and enters the main loop; the current player is prompted to move with each turn.
 
 The board is updated based on the player's action, including moving the player's position and collecting gems.
 
