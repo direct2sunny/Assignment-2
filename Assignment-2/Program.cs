@@ -127,6 +127,8 @@ namespace GemHunters
                 }
                 Console.WriteLine();
             }
+            // Displaying gem counts
+            Console.WriteLine($"P1 Gems: {player1.GemCount}, P2 Gems: {player2.GemCount}");
         }
 
         public bool IsValidMove(Player player, char direction)
@@ -208,7 +210,7 @@ namespace GemHunters
 
         private bool IsGameOver()
         {
-            return TotalTurns == 30;
+            return TotalTurns == 30 || (Player1.GemCount + Player2.GemCount == 5);
         }
 
         private void AnnounceWinner()
