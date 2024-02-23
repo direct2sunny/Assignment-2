@@ -75,3 +75,16 @@ The winner is announced based on the number of gems each player collects.
 
 The game ended up with a winner or tie.
 
+
+**Start Game Screenshot**
+
+![Start Game Screenshot](https://github.com/direct2sunny/Assignment-2/assets/156108180/00268d03-bd71-4796-a938-ba993950fcc4)
+
+
+**End Game Screenshot**
+
+![End Game Screenshot](https://github.com/direct2sunny/Assignment-2/assets/156108180/c9a3cede-c59e-45cd-9ab7-b1e70e148b03)
+
+
+
+
