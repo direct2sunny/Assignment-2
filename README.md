@@ -75,13 +75,24 @@ The winner is announced based on the number of gems each player collects.
 
 The game ended up with a winner or tie.
 
+**Assignment 2 GemHunter Game Video**
+
+
+
+https://github.com/direct2sunny/Assignment-2/assets/156108180/d3da01c9-18b7-4d04-a30c-47102548d8cf
+
+
 
 **Start Game Screenshot**
 
 ![Start Game Screenshot](https://github.com/direct2sunny/Assignment-2/assets/156108180/00268d03-bd71-4796-a938-ba993950fcc4)
 
+**Invalid Move Error Screenshot**
 
-**End Game Screenshot**
+![Invalid Move Screenshot](https://github.com/direct2sunny/Assignment-2/assets/156108180/ab120a10-a10d-4b7c-9b3d-ef303b3cabee)
+
+
+**End and Tie Game Screenshot**
 
 ![End Game Screenshot](https://github.com/direct2sunny/Assignment-2/assets/156108180/c9a3cede-c59e-45cd-9ab7-b1e70e148b03)
 
