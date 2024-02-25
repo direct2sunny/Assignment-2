@@ -1,6 +1,6 @@
 using System;
 
-// Main entry point for the GemHunters game.
+// The GemHunters Game Class.
 namespace GemHunters
 {
     class Program
@@ -19,7 +19,7 @@ namespace GemHunters
         public int X { get; set; }
         public int Y { get; set; }
 
-        // Constructor to set initial position.
+        // Constructor. 
         public Position(int x, int y)
         {
             X = x;
@@ -27,14 +27,14 @@ namespace GemHunters
         }
     }
 
-    // Defines a player in the game.
+    // Defines a Player Class.
     public class Player
     {
         public string Name { get; set; }
         public Position Position { get; set; }
         public int GemCount { get; set; }
 
-        // Constructor to create a player with a name and initial position.
+        // Constructor.
         public Player(string name, Position position)
         {
             Name = name;
@@ -55,24 +55,24 @@ namespace GemHunters
         }
     }
 
-    // Represents a cell on the board.
+    // Represents a Cell Class.
     public class Cell
     {
         public string Occupant { get; set; }
 
-        // Constructor to set the occupant of a cell.
+        // Constructor.
         public Cell(string occupant = "-")
         {
             Occupant = occupant;
         }
     }
 
-    // Represents the game board, a 6x6 grid.
+    // Represents The Board Class, A 6x6 Grid.
     public class Board
     {
         public Cell[,] Grid { get; set; }
 
-        // Constructor to create and initialize the board.
+       
         public Board()
         {
             Grid = new Cell[6, 6];
@@ -87,7 +87,7 @@ namespace GemHunters
             PlaceGems();
         }
 
-        // Places obstacles randomly on the board.
+        // Places Obstacles Randomly Class.
         private void PlaceObstacles()
         {
             Random rand = new Random();
@@ -103,7 +103,7 @@ namespace GemHunters
             }
         }
 
-        // Places gems randomly on the board.
+        // Places Gems Randomly Class.
         private void PlaceGems()
         {
             Random rand = new Random();
@@ -141,7 +141,7 @@ namespace GemHunters
                 }
                 Console.WriteLine();
             }
-            // Displaying gem counts for both players.
+            // Gem Counts For Both Players.
             Console.WriteLine($"P1 Gems: {player1.GemCount}, P2 Gems: {player2.GemCount}");
         }
 
@@ -160,7 +160,7 @@ namespace GemHunters
             return newX >= 0 && newX < 6 && newY >= 0 && newY < 6 && Grid[newY, newX].Occupant != "O";
         }
 
-        // Allows players to collect gems if they land on a gem cell.
+        
         public void CollectGem(Player player)
         {
             if (Grid[player.Position.Y, player.Position.X].Occupant == "G")
@@ -171,7 +171,7 @@ namespace GemHunters
         }
     }
 
-    // Manages the flow of the game.
+    // The Game Class.
     public class Game
     {
         public Board Board { get; set; }
@@ -180,7 +180,7 @@ namespace GemHunters
         private Player CurrentTurn { get; set; }
         private int TotalTurns { get; set; }
 
-        // Constructor to create a new game instance.
+        
         public Game()
         {
             Board = new Board();
@@ -190,7 +190,7 @@ namespace GemHunters
             TotalTurns = 0;
         }
 
-        // Starts the game and manages turns until the game is over.
+        // Starts The Game and Manages Turns Until The Game is Over.
         public void Start()
         {
             Console.WriteLine("Welcome to Gem Hunters!");
@@ -220,20 +220,20 @@ namespace GemHunters
             AnnounceWinner();
         }
 
-        // Switches turn between players.
+        // Switch Players.
         private void SwitchTurn()
         {
             CurrentTurn = CurrentTurn == Player1 ? Player2 : Player1;
             TotalTurns++;
         }
 
-        // Determines if the game is over based on turn count or gem collection.
+        // The Game is Over Based on Turn Count or Gem Collection.
         private bool IsGameOver()
         {
             return TotalTurns == 30 || (Player1.GemCount + Player2.GemCount == 5);
         }
 
-        // Announces the winner based on gem count.
+        // The Winner Based on Gem Count.
         private void AnnounceWinner()
         {
             Console.WriteLine($"Game Over. P1 Gems: {Player1.GemCount}, P2 Gems: {Player2.GemCount}");
